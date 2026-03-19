@@ -1,0 +1,11 @@
+# 忽略数据集二进制文件和源文件
+data/*/train.bin
+data/*/val.bin
+data/*/input.txt
+
+# 忽略所有模型输出文件夹
+out-*/
+
+# 忽略 Python 临时文件
+__pycache__/
+*.pyc
