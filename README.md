@@ -37,15 +37,15 @@ python sample.py --out_dir=out-shakespeare-char
 ```
 
 生成如下样本
-(C:\Users\27163\Desktop\朱正涛\朱正涛1.png)
+![朱正涛1](图片/朱正涛1.png)
 
 仿照莎士比亚的流程，在data里分别创建tianlong和poemtxt文件夹，将shakespeare_char中的prepare.py文件分别复制，并修改其中的路径，仿照上方命令运行生成训练集与测试集生成如下样本
-("C:\Users\27163\Desktop\朱正涛\朱正涛3.png")
-("C:\Users\27163\Desktop\朱正涛\朱正涛4.png")
+![朱正涛3](图片/朱正涛3.png)   
+![朱正涛4](图片/朱正涛4.png)
 
 思考题：
 1. 使⽤《天⻰⼋部》tianlong.txt数据集训练⼀个GPT模型，并⽣成内容看看效果。  
-("C:\Users\27163\Desktop\朱正涛\朱正涛3.png")
+![朱正涛3](图片/朱正涛3.png)
 2. 思考config/train_poemtext_char.py训练⽂件中其他参数的含义，修改其参数并重新进⾏训练，看看其效果怎么样。  
 batch_size 每次迭代送入模型的样本数量。 增大可加速训练（充分利用 GPU），但受显存限制。若显存不足，需减小。  
 block_size 输入序列的长度（上下文窗口大小）。 增大能让模型看到更长依赖，但会增加计算量和显存消耗。对于长篇小说，建议设 256 或 512。  
